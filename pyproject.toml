@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "torch-examples"
+version = "0.1.0"
+description = ""
+authors = ["Fischer Bordwell <fbordwel@purdue.edu>"]
+packages = [{include = "examples"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.12.1"
+torchvision = "^0.13.1"
+torchaudio = "^0.12.1"
+matplotlib = "^3.6.0"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
